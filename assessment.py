@@ -53,3 +53,15 @@ class EngineeringTest:
                 else:
                     print("Answer yes or no")
                     playing = input("Are you ready for your test? ").strip()
+
+
+        def field(self, dept):
+            # Validate user's engineering field
+            while True:
+                if dept.lower() in ("computer", "electrical", "mechanical", "civil"):
+                    return dept.capitalize()
+                else:
+                    print(
+                        "This test accomodates only Computer, Electrical, Mechanical and Civil Engineering"
+                    )
+                dept = input("What is your field of Engineering? ").strip()
