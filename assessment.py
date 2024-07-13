@@ -21,3 +21,16 @@ class EngineeringTest:
                 f"welcome to your {field_name} Engineering Assessment Test!!!"
                 "Choose the correct option among options A, B, C and D"
             )
+
+            # Direct to the appropriate department based on user input
+            if dept.lower() == "civil":
+                self.civil()
+            elif dept.lower() == "electrical":
+                self.electrical()
+            elif dept.lower() == "computer":
+                self.computer()
+            elif dept.lower() == "mechanical":
+                self.mechanical()
+            else:
+                print("Invalid department. Exiting the test.")
+                exit()
