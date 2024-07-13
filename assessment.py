@@ -65,3 +65,18 @@ class EngineeringTest:
                         "This test accomodates only Computer, Electrical, Mechanical and Civil Engineering"
                     )
                 dept = input("What is your field of Engineering? ").strip()
+
+
+        def ask_question(self, question, correct_answer):
+            # Ask a question and validate the answer
+            while True:
+                answer = input(question + "Your answer: ").strip().lower()
+                if answer in ("a", "b", "c", "d"):
+                    if answer == correct_answer:
+                        print("Correct!")
+                        self.score += 1
+                    else:
+                        print(f"Incorrect. The correct answer is {correct_answer.upper()}.")
+                    break
+                else:
+                    print("Invalid option")
