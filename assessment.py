@@ -224,3 +224,51 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
+        
+
+        def mechanical(self):
+            # Questions for Mechanical Engineering
+            questions = [
+                (
+                    "\nQ1. What is the SI unit of stress?\n"
+                    "A. Pascal\n"
+                    "B. Quick Sort\n"
+                    "C. Selection Sort\n"
+                    "D. Insertion Sort\n",
+                    "a",
+                ),
+                (
+                    "\nQ2. What is the first law of thermodynamics also known as?\n"
+                    "A. Law of conservation of mass.\n"
+                    "B. Law of conservation of energy.\n"
+                    "C. Law of entropy.\n"
+                    "D. Law of action and reaction.\n",
+                    "b",
+                ),
+                (
+                    "\nQ3. Which type of heat transfer occurs due to the movement of fluid?\n"
+                    "A. Conduction.\n"
+                    "B. Convection.\n"
+                    "C. Radiation.\n"
+                    "D. None of the above.\n",
+                    "b",
+                ),
+                (
+                    "\nQ4. Which of the following materials has the highest thermal conductivity?\n"
+                    "A. Copper.\n"
+                    "B. Aluminum.\n"
+                    "C. Steel.\n"
+                    "D. Glass.\n",
+                    "a",
+                ),
+                (
+                    "\nQ5. What is the primary purpose of a flywheel in an engine?\n"
+                    "A. To cool the engine.\n"
+                    "B. To reduce friction.\n"
+                    "C. To increase speed.\n"
+                    "D. To store rotational energy.\n",
+                    "d",
+                ),
+            ]
+            for question, correct_answer in questions:
+                self.ask_question(question, correct_answer)
