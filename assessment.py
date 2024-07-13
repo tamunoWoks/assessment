@@ -128,3 +128,51 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
+
+
+        def electrical(self):
+            # Questions for Electrical Engineering
+            questions = [
+                (
+                    "\nQ1. What is Ohm's Law?\n"
+                    "A. V = IR\n"
+                    "B. P = IV\n"
+                    "C. P = IRV\n"
+                    "D. V = IRP\n",
+                    "a",
+                ),
+                (
+                    "\nQ2. What is the unit of magnetic flux?\n"
+                    "A. Tesla.\n"
+                    "B. Weber.\n"
+                    "C. Gauss.\n"
+                    "D. Henry.\n",
+                    "b",
+                ),
+                (
+                    "\nQ3. What is the function of a transformer?\n"
+                    "A. To convert AC to DC.\n"
+                    "B. To store electrical energy.\n"
+                    "C. To increase the frequency of AC.\n"
+                    "D. To step up or step down AC voltage.\n",
+                    "d",
+                ),
+                (
+                    "\nQ4. What is a three-phase power system primarily used for?\n"
+                    "A. Reducing energy consumption.\n"
+                    "B. Improving power factor.\n"
+                    "C. Efficient transmission of electrical power.\n"
+                    "D. Converting AC to DC.\n",
+                    "c",
+                ),
+                (
+                    "\nQ5. What is the purpose of a diode in an electrical circuit?\n"
+                    "A. To amplify signals.\n"
+                    "B. To store electrical energy.\n"
+                    "C. To resist changes in current.\n"
+                    "D. To allow current to flow in one direction only.\n",
+                    "d",
+                ),
+            ]
+            for question, correct_answer in questions:
+                self.ask_question(question, correct_answer)
