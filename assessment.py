@@ -278,3 +278,15 @@ class EngineeringTest:
             # Calculate the percentage score
             percentage = (self.score / 5) * 100
             return round(percentage)
+
+
+        def grade(self, final_score):
+            # Assign a grade based on the final score
+            if final_score >= 80:
+                return "Excellent!!!"
+            elif final_score >= 70:
+                return "Good!!!"
+            elif final_score >= 60:
+                return "Pass!!!"
+            else:
+                return "Fail, Resit the exam!!!"
