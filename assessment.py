@@ -6,7 +6,6 @@ class EngineeringTest:
         # Initialize the score to zero
         self.score = 0
 
-
         def main(self):
             print("Welcome to the Engineering Internship assessment Test!\n")
 
@@ -41,7 +40,6 @@ class EngineeringTest:
             print(f"Your score is {final_score}%")
             print(self.grade(final_score))
 
-
         def ready(self, playing):
             # Check if user is ready for test
             while True:
@@ -54,7 +52,6 @@ class EngineeringTest:
                     print("Answer yes or no")
                     playing = input("Are you ready for your test? ").strip()
 
-
         def field(self, dept):
             # Validate user's engineering field
             while True:
@@ -66,7 +63,6 @@ class EngineeringTest:
                     )
                 dept = input("What is your field of Engineering? ").strip()
 
-
         def ask_question(self, question, correct_answer):
             # Ask a question and validate the answer
             while True:
@@ -76,11 +72,12 @@ class EngineeringTest:
                         print("Correct!")
                         self.score += 1
                     else:
-                        print(f"Incorrect. The correct answer is {correct_answer.upper()}.")
+                        print(
+                            f"Incorrect. The correct answer is {correct_answer.upper()}."
+                        )
                     break
                 else:
                     print("Invalid option")
-
 
         def civil(self):
             # Questions for Civil Engineering
@@ -129,7 +126,6 @@ class EngineeringTest:
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
 
-
         def electrical(self):
             # Questions for Electrical Engineering
             questions = [
@@ -177,7 +173,6 @@ class EngineeringTest:
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
 
-
         def computer(self):
             # Questions for Computer Engineering
             questions = [
@@ -224,7 +219,6 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
-        
 
         def mechanical(self):
             # Questions for Mechanical Engineering
@@ -272,13 +266,11 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
-                
 
         def calculate_score(self):
             # Calculate the percentage score
             percentage = (self.score / 5) * 100
             return round(percentage)
-
 
         def grade(self, final_score):
             # Assign a grade based on the final score
@@ -290,7 +282,7 @@ class EngineeringTest:
                 return "Pass!!!"
             else:
                 return "Fail, Resit the exam!!!"
-            
+
 
 if __name__ == "__main__":
     # Create an instance of the test and start the main function
