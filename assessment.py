@@ -80,3 +80,51 @@ class EngineeringTest:
                     break
                 else:
                     print("Invalid option")
+
+
+        def civil(self):
+            # Questions for Civil Engineering
+            questions = [
+                (
+                    "\nQ1. What is the primary purpose of reinforcement in concrete?\n"
+                    "A. To reduce the weight of the concrete structure.\n"
+                    "B. To improve its tensile strength.\n"
+                    "C. To increase its compressive strength.\n"
+                    "D. To enhance its aesthetic appearance.\n",
+                    "b",
+                ),
+                (
+                    "\nQ2. What is the primary purpose of a soil compaction test?\n"
+                    "A. To determine the soil's moisture content.\n"
+                    "B. To test the soil's permeability.\n"
+                    "C. To determine the soil's mineral content.\n"
+                    "D. To increase the soil's density.\n",
+                    "d",
+                ),
+                (
+                    "\nQ3. What is Manning's equation used for?\n"
+                    "A. Calculating the velocity of flow in an open channel.\n"
+                    "B. Calculating the velocity of flow in a closed pipe.\n"
+                    "C. Determining the pressure in a water distribution system.\n"
+                    "D. Estimating the flow rate in a sewer system.\n",
+                    "a",
+                ),
+                (
+                    "\nQ4. What information does a hydrograph provide?\n"
+                    "A. The velocity of flow in a river.\n"
+                    "B. The water quality parameters of a river.\n"
+                    "C. The rate of flow (discharge) versus time past a specific point.\n"
+                    "D. The temperature variations in a water body.\n",
+                    "c",
+                ),
+                (
+                    "\nQ5. What does the Level of Service (LOS) in traffic engineering describe?\n"
+                    "A. The maximum speed limit on a road.\n"
+                    "B. The capacity of a parking lot.\n"
+                    "C. The number of traffic signals on a road.\n"
+                    "D. The operational conditions of a roadway or intersection.\n",
+                    "d",
+                ),
+            ]
+            for question, correct_answer in questions:
+                self.ask_question(question, correct_answer)
