@@ -272,3 +272,9 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
+                
+
+        def calculate_score(self):
+            # Calculate the percentage score
+            percentage = (self.score / 5) * 100
+            return round(percentage)
