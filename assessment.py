@@ -34,3 +34,9 @@ class EngineeringTest:
             else:
                 print("Invalid department. Exiting the test.")
                 exit()
+
+            # Calculate and display the final score
+            final_score = self.calculate_score()
+            print(f"\nYou got {self.score} correct")
+            print(f"Your score is {final_score}%")
+            print(self.grade(final_score))
