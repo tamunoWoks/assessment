@@ -290,3 +290,9 @@ class EngineeringTest:
                 return "Pass!!!"
             else:
                 return "Fail, Resit the exam!!!"
+            
+
+if __name__ == "__main__":
+    # Create an instance of the test and start the main function
+    test = EngineeringTest()
+    test.main()
