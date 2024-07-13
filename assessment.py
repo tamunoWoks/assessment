@@ -40,3 +40,16 @@ class EngineeringTest:
             print(f"\nYou got {self.score} correct")
             print(f"Your score is {final_score}%")
             print(self.grade(final_score))
+
+
+        def ready(self, playing):
+            # Check if user is ready for test
+            while True:
+                if playing.lower() in ("no", "n"):
+                    print("Come back when you are ready!!")
+                    exit()
+                elif playing.lower() in ("yes", "y"):
+                    return "Okay! Let's begin, Goodluck!"
+                else:
+                    print("Answer yes or no")
+                    playing = input("Are you ready for your test? ").strip()
