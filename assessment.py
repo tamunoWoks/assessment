@@ -176,3 +176,51 @@ class EngineeringTest:
             ]
             for question, correct_answer in questions:
                 self.ask_question(question, correct_answer)
+
+
+        def computer(self):
+            # Questions for Computer Engineering
+            questions = [
+                (
+                    "\nQ1. Which sorting algorithm has the best average time complexity?\n"
+                    "A. Bubble Sort\n"
+                    "B. Quick Sort\n"
+                    "C. Selection Sort\n"
+                    "D. Insertion Sort\n",
+                    "b",
+                ),
+                (
+                    "\nQ2. What does GUI stand for?\n"
+                    "A. Graphical User Interface.\n"
+                    "B. General User Interface.\n"
+                    "C. Global User Interface.\n"
+                    "D. Guided User Interface.\n",
+                    "a",
+                ),
+                (
+                    "\nQ3. In a network, what is the function of a router?\n"
+                    "A. To store data.\n"
+                    "B. To provide a wireless signal.\n"
+                    "C. To translate domain names into IP addresses.\n"
+                    "D. To manage network traffic.\n",
+                    "d",
+                ),
+                (
+                    "\nQ4.Which of the following is not a type of computer bus?\n"
+                    "A. Data Bus.\n"
+                    "B. Address Bus.\n"
+                    "C. Output Bus.\n"
+                    "D. Control Bus.\n",
+                    "c",
+                ),
+                (
+                    "\nQ5. Which of the following is an example of an operating system?\n"
+                    "A. Python.\n"
+                    "B. MySQL.\n"
+                    "C. Ethernet.\n"
+                    "D. Windows.\n",
+                    "d",
+                ),
+            ]
+            for question, correct_answer in questions:
+                self.ask_question(question, correct_answer)
